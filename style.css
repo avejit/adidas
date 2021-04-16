@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    width: 30%;
+    /*    background-color: #D96E46;*/
+    background-color: rgba(127, 99, 75, 0.9);
+    height: 100px;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+
+.logo img {
+    width: 50%;
+    height: 100%;
+
+
+}
+
+/* menu start */
+
+.menu {
+    /*    background: #D96E46;*/
+    width: 70%;
+    float: right;
+    background-color: rgba(127, 99, 75, 0.9);
+    height: 100px;
+}
+
+.menu > ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.menu ul li {
+    display: inline-block;
+    border-left: 1px solid white;
+    margin-left: -4px;
+    position: relative;
+}
+
+.menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.menu ul li:hover > a {
+    background-color: #1E2731;
+}
+
+/* submenu start */
+
+.menu ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /*    background-color: #D96E46;*/
+    visibility: hidden;
+    width: 200px;
+    box-shadow: 5px 5px 5px white;
+    text-align: center;
+    background-color: rgba(127, 99, 75, 0.9);
+}
+
+.menu ul li ul li {
+    display: block;
+    margin-left: 0px;
+    border-left: none;
+    border-bottom: 1px solid white;
+    position: relative;
+
+}
+
+.menu ul li ul li:last-child {
+    border-right: none;
+}
+
+.menu ul li ul li a {
+    display: block;
+}
+
+.menu ul li:hover > ul {
+    visibility: visible;
+}
+
+.menu ul li ul li ul {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    /*    background-color: #D96E46;*/
+    background-color: rgba(127, 99, 75, 0.9);
+    visibility: hidden;
+    box-shadow: 5px 5px 5px white;
+    width: 250px;
+}
+
+.menu ul li ul li ul li {
+
+    border: 1px solid white;
+}
+
+.menu ul li ul li:hover ul {
+    visibility: visible;
+}
+
+/* sub menu end */
+
+/* menu end */
+
+/* search start */
+
+.menu > ul > li input {
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 50%;
+}
+
+.menu > ul > li > input::placeholder {
+    font-size: 14px;
+    opacity: 1;
+    padding: 10px;
+}
+
+.menu > ul > li:last-child::after {
+    content: "\f002";
+    position: absolute;
+    top: 36%;
+    right: -45%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: gray;
+}
+
+/* search end */
+
+/* end of header */
+
+/* banner start */
+
+.banner {
+    background: url('bg.jpg');
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.banner h1 {
+    color: white;
+    font-size: 80px;
+    margin-top: 160px;
+    text-shadow: 10px 5px 10px coral;
+    background-color: rgba(127, 99, 75, 0.3);
+    display: inline-block;
+    padding: 5px 20px;
+    background-attachment: fixed;
+    top: 160px;
+}
+
+/* banner end */
+
+
+
+/* content start */
+
+
+
+.content > h2 {
+    font-size: 90px;
+    margin: 30px;
+}
+
+.content > .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 100px;
+}
+
+.content > .c1 {
+    float: left;
+    margin-left: 5%;
+
+}
+
+.content > .c2 {
+    float: left;
+    margin-left: 5%;
+
+}
+
+.content > .c3 {
+    float: right;
+    margin-right: 5%;
+    margin-left: 5%;
+    clear: right;
+}
+
+.card > .title {
+    color: grey;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card p button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+
+
+.card p button:hover {
+    opacity: 0.7;
+}
+
+/* about section start */
+
+.about h2 {
+    text-align: center;
+    font-size: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.about img {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.about p {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.about .img {
+    float: right;
+}
+
+/* footer start*/
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background-color: rgba(127, 99, 75, 0.9);
+    text-align: center;
+    /*
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+  width: 100%;
+*/
+}
+
+.footer h4 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    display: inline-block;
+}
+
+.footer ul li a {
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    display: block;
+    font-size: 20px;
+}
+
+/* footer end*/
